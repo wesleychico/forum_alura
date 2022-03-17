@@ -3,8 +3,8 @@ package br.com.alura.forum.model
 import java.time.LocalDateTime
 
 data class Topico(
-    val id: Long? = null,
-    val titulo: String,
+    var id: Long? = null,
+    var titulo: String,
     val mensagem: String,
     val dataCriação: LocalDateTime = LocalDateTime.now(),
     val curso: Curso,
